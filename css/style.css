@@ -47,7 +47,6 @@ ul, li {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 0 auto;
-	/*border: 1px solid red;*/
 }
 .main-navigation  {
 	display: inline-block;
@@ -894,7 +893,8 @@ input[type="radio"]:checked + label::before {
 	display: block;
 }
 .button {
-	font-weight: bold;
+	font-weight: 700;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 .button:hover {
 	cursor: pointer;
