@@ -104,10 +104,10 @@
     			<h2 class="section-title">ЗАПИСАТЬСЯ</h2>
     			<p>УКАЖИТЕ ЖЕЛАЕМУЮ ВРЕМЯ ИДАТУ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
     			<form action="/" method="GET">
-    				<input type="date" name="enroll-date">
-    				<input type="text" name="client-name">
-    				<input type="time" name="enroll-time">
-    				<input type="tel" name="phone-number">
+    				<input type="text" name="enroll-date" pattern="(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])" placeholder="ДАТА">
+    				<input type="text" name="client-name" pattern="[А-Яа-яЁё]+" placeholder="ИМЯ">
+    				<input type="text" name="enroll-time" pattern="([0-1]\d|2[0-3])[:]([0-5]\d)" placeholder="ВРЕМЯ">
+    				<input type="tel" name="phone-number" pattern="[\d() -]+" placeholder="ТЕЛЕФОН">
     				<button class="button form-sbmt-btn" type="submit">ОТПРАВИТЬ</button>
     			</form>
     		</section>
