@@ -815,6 +815,7 @@ input[type="radio"]:checked + label::before {
 }
 .modal-content-close {
 	border: none;
+	outline: none;
 }
 .login-form input:focus {
 	border: 2px solid #000000;
@@ -892,3 +893,8 @@ input[type="radio"]:checked + label::before {
 .modal-map-show {
 	display: block;
 }
+.button {
+	font-weight: bold;
+}
+.button:hover {
+	cursor: pointer;
