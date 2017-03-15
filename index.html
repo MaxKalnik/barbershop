@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html lang="ru">
 <head>
 	<title>Барбершоп Бородинский</title>
 	<meta charset="utf-8">
@@ -82,10 +82,13 @@
     		<section class="photos">
     			<h2 class="section-title">ФОТОГАЛЕРЕЯ</h2>
     			<figure>
-    				<img width="286" height="164" src="image/about-photo.png">
+    				<a href="#"><img class="gallery-item" width="286" height="164" src="image/about-photo.png"></a>
+            <a href="#"><img class="gallery-item" width="286" height="164" src="image/about-photo.png"></a>
+            <a href="#"><img class="gallery-item" width="286" height="164" src="image/about-photo.png"></a>
+            <a href="#"><img class="gallery-item" width="286" height="164" src="image/about-photo.png"></a>
     			</figure>
-    			<button class="button photos-prev">НАЗАД</button>
-    			<button class="button photos-next">ВПЕРЕД</button>
+<!--     			<button class="button photos-prev">НАЗАД</button>
+    			<button class="button photos-next">ВПЕРЕД</button> -->
     		</section>
     	</div>
     	<div class="about clearfix">
@@ -161,8 +164,14 @@
   </div>
   </div>
   <script>
-      var html = document.documentElement;
-      html.className = html.className.replace("no-js", "js");
+      var gallery = document.querySelector(".photos");
+      gallery.classList.add("gallery-live");
+      var buttons = 
+      '<button class="button photos-prev">НАЗАД</button>' + 
+      '<button class="button photos-next">ВПЕРЕД</button>';
+      gallery.innerHTML = gallery.innerHTML + buttons;
+
+
 
       var login = document.querySelector(".user-block");
       var popup = document.querySelector(".modal-content");

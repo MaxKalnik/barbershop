@@ -152,6 +152,7 @@ ul, li {
 	padding-bottom: 50px;
 	background-color: #ffffff;
 	background-image: url(../image/about-bg.png);
+	background-repeat: no-repeat;
 }
 .news,
 .contacts {
@@ -475,6 +476,19 @@ label {
 	padding-top: 7px;
 	padding-bottom: 7px;
 	margin-bottom: 45px;
+}
+.gallery-item {
+	width: 130px;
+}
+.gallery-live .gallery-item {
+	width: auto;
+	
+}
+.gallery-live figure {
+	height: 160px;
+	overflow: auto;
+
+
 }
 h2 {
 	font-size: 30px;
@@ -903,10 +917,4 @@ input[type="radio"]:checked + label::before {
 .button:hover,
 a:hover {
 	cursor: pointer;
-}
-.no-js .photos .button {
-	display: none;
-}
-.js .photos .button {
-	display: inline-block;
 }
