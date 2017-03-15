@@ -523,11 +523,15 @@ a:hover > span::before {
 }
 .enroll input {
 	width: 140px;
-	height: 40px;
+	height: 45px;
+	padding: 15px;
+	font-size: 14px;
+	font-weight: bold;
 	margin-right: 0;
 	border: 2px solid black;
 	box-sizing: border-box;
 	margin-bottom: 20px;
+	outline: none;
 }
 .enroll input:nth-of-type(2n+1) {
 	margin-right: 16px;
@@ -896,5 +900,13 @@ input[type="radio"]:checked + label::before {
 	font-weight: 700;
 	font-family: 'PT Sans Narrow', sans-serif;
 }
-.button:hover {
+.button:hover,
+a:hover {
 	cursor: pointer;
+}
+.no-js .photos .button {
+	display: none;
+}
+.js .photos .button {
+	display: inline-block;
+}

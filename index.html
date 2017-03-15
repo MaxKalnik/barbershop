@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 <head>
 	<title>Барбершоп Бородинский</title>
 	<meta charset="utf-8">
@@ -161,6 +161,9 @@
   </div>
   </div>
   <script>
+      var html = document.documentElement;
+      html.className = html.className.replace("no-js", "js");
+
       var login = document.querySelector(".user-block");
       var popup = document.querySelector(".modal-content");
       var button = document.querySelector(".modal-content-close");
